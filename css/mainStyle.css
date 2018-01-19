@@ -1,0 +1,277 @@
+@font-face
+{
+font-family: myFancyFont;
+src: url('fonts/LOSTWAGE.TTF'),
+}
+
+@font-face
+{
+font-family: "Dita";
+src: url('fonts/Didot.ttc'),
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,400');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background: black;
+}
+
+
+#content{
+  background-color: black;
+  margin:0;
+  height: 100vh;
+}
+#content section{
+  height: 100vh;
+}
+
+#section1{
+  background-color: black;
+}
+
+#section2{
+  background-image: url(../img/tropio.jpg);
+  background-color: #101010;
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: right bottom;
+background-size: 120% 120%;
+}
+
+#section3{
+  background-color: #151515;
+}
+
+/*
+@keyframes flickering-1 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+
+
+}
+
+span.flickering-1{
+  animation: flickering-1 6s infinite;
+}
+*/
+
+
+/*
+    T H E    M A I N   P A G E
+*/
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navigation{
+  margin:5% 0 0 5%;
+  position: fixed;
+  z-index: 1;
+}
+
+.navBtn{
+    display: block;
+    width: 48px;
+    height: 36px;
+    margin: 0;
+}
+.navLine{
+  background-color: white;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease;
+}
+
+.navLine.middle{
+  margin: 9px 0;
+}
+
+.navLine.top.active{
+  transform: rotate(38.682deg);
+}
+
+.navLine.middle.active{
+  transform: rotateX(90deg);
+}
+.navLine.bottom.active{
+  transform: rotate(-38.682deg);
+}
+
+
+#menuBtns{
+  width: 50px;
+  height: 1000px;
+  margin: 40% 0;
+}
+#menuBtns img{
+  width: 50px;
+  height: 50px;
+}
+
+#menuBtns img:hover{
+  width: 60px;
+  height: 60px;
+}
+
+.bounceInTop {
+  animation: bounceInDown 0.8s;
+  animation-delay: -0.3s;
+  }
+
+  .bounceOutLeft{
+    animation: bounceOutLeft 0.8s;
+    animation-delay: -0.3s;
+  }
+
+  .slideInDown{
+    animation: slideInDown 0.9s;
+    animation-delay: -0.5s;
+  }
+
+
+  #tw{
+    margin:200% 0;
+  }
+
+/* CHANGES IN VERTICAL FIXED NAVIGATION */
+  .no-touch #cd-vertical-nav .cd-dot {
+    top: 8px;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+
+  }
+
+
+  /*  I N T R O   L O G O */
+
+.introLogo{
+  text-align: center;
+  margin: 10% 0 0 0;
+  /*
+  position: relative;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  */
+}
+
+.introLogo{
+  width:100%;
+}
+.introLogo h1{
+  font-family: Dita;
+  font-size: 8em;
+  padding: 4% 0;
+  text-transform: none;
+  margin-top: -4%;
+}
+.framies:after, .framies:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  border: solid white;
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=10);
+}
+
+.framies:before {
+    top: 0;
+    left: 0;
+    border-width: 3px 0 0 4px;
+}
+
+ .framies:after {
+    right: 0;
+    bottom: 0;
+    border-width: 0 4px 3px 0;
+}
+
+.pulse{
+  animation: pulse 0.9s;
+  animation-delay: -0.5s;
+}
+/*    S E C O N D    P A G E */
+
+.leftSideT{
+  margin: 25% 0 0 35%;
+  text-align: left;
+}
+
+.leftSideT h2{
+  font-size: 3em;
+  color:white;
+}
+.leftSideT h3{
+  width: 70%;
+  font-size: 1.4em;
+  color:white;
+  text-align: center;
+}
+.leftSideT a{
+  width: 50%;
+  font-size: 1em;
+  color:white;
+  text-align: center;
+  border: 1px solid white;
+  padding: 1% 8%;
+}
+.leftSideT a:hover{
+    font-size: 1.04em;
+  color:black;
+  background-color: white;
+  transition: all 0.3s ease 0s;
+}
+
+
+.rightSideT{
+  margin: 33% 0 0 20%;
+text-align: left;
+
+}
+
+.rightSideT h2{
+  text-align: center;
+  font-size: 2em;
+  color:white;
+  width: 30%;
+  padding: 5% 0;
+  border: 1px solid white;
+
+}
+.rightSideT h2:hover{
+
+  color: black;
+  background-color: white;
+  transition: all 0.4s ease 0s;
+}
